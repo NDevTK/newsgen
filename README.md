@@ -2,6 +2,7 @@
 - RSS feed for output (https://news.ndev.tk/rss)
 - Github actions
 - Github pages with jekyll
+- Added text to speech with background music by OurMusicBox (Jay Man) (CC BY 4.0)
 
 # NewsGen:  Your friendly neighborhood article generator
 
