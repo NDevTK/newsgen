@@ -1,5 +1,5 @@
 ## Changes by NDevTK (My changes are under the MIT license)
-- RSS feed for output
+- RSS feed for output (https://news.ndev.tk/rss)
 - Github actions
 - Github pages with jekyll
 
