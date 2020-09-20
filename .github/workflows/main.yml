@@ -16,7 +16,10 @@ jobs:
       run: |
         pip install -r requirements.txt
         python files.py
-    - name: newsgen
+    - name: newsgen pull
+      run: |
+        python newsgen.py -r satire.txt -d database.db pull
+    - name: newsgen article
       run: |
         python newsgen.py -r satire.txt -d database.db article
     - name: Commit files
