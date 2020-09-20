@@ -21,7 +21,7 @@ jobs:
         python newsgen.py -r satire.txt -d database.db pull
     - name: newsgen article
       run: |
-        python newsgen.py -r satire.txt -d database.db article
+        python newsgen.py -r satire.txt -d database.db -o json -O "output" article
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
