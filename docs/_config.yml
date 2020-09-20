@@ -3,3 +3,6 @@ description: FakeNews :D
 url: https://news.ndev.tk
 plugins:
   - jekyll-feed
+collections:
+  fakenews:
+    output: true
