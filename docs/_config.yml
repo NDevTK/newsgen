@@ -9,4 +9,4 @@ collections:
 feed:
   collections:
     fakenews:
-      path: "/rss.xml"
+      path: "rss.xml"
