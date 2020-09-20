@@ -1,6 +1,7 @@
 name: FakeNews
 description: Satire news generated with Markov chains
 url: https://news.ndev.tk
+permalink: pretty
 plugins:
   - jekyll-feed
 collections:
