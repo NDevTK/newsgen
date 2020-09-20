@@ -8,4 +8,5 @@ collections:
     output: true
 feed:
   collections:
-    - fakenews
+    fakenews:
+      path: "/rss.xml"
