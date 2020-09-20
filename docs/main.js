@@ -33,10 +33,13 @@ async function THENEWS() {
 
 async function reader() {
     if(bg.paused) return
-    await generate();
     text = new SpeechSynthesisUtterance(content.innerText);
     text.voice = voice;
     text.onerror = () => reader();
     text.onend = () => reader();
     speechSynthesis.speak(text);
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
