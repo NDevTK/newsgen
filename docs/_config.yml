@@ -11,3 +11,9 @@ feed:
   collections:
     fakenews:
       path: "rss.xml"
+defaults:
+  - scope:
+      path: ""
+      type: "fakenews"
+    values:
+      layout: "fakenews"
