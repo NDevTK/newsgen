@@ -1,3 +1,8 @@
+## Changes by NDevTK (My changes are under the MIT license)
+- RSS feed for output
+- Github actions
+- Github pages with jekyll
+
 # NewsGen:  Your friendly neighborhood article generator
 
 NewsGen provides tooling to pull corpuses of articles in order to generate new
