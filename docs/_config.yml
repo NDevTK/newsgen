@@ -6,3 +6,6 @@ plugins:
 collections:
   fakenews:
     output: true
+feed:
+  collections:
+    - fakenews
