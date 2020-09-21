@@ -20,10 +20,10 @@ jobs:
         python files.py
     - name: newsgen pull
       run: |
-        python newsgen.py -r clickhole.txt -d database.db pull
+        python newsgen.py -r satire.txt -d database.db pull
     - name: newsgen article
       run: |
-        python newsgen.py -r clickhole.txt -d database.db -o markdown -O docs/_fakenews article
+        python newsgen.py -r satire.txt -d database.db -o markdown -O docs/_fakenews article
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
