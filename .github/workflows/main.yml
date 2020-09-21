@@ -28,6 +28,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git pull
         git add .
         git commit -m "Fake News [Auto]" -a
     - name: Push changes
