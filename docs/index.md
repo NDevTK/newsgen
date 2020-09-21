@@ -1,6 +1,6 @@
 <ul>
   {% assign fakenews = site.fakenews | reverse %}
-  {% for post in fakenews %}
+  {% for post in fakenews limit:10 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
