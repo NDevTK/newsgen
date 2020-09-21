@@ -33,11 +33,11 @@ async function THENEWS() {
 
 async function reader() {
     if(bg.paused) return
-    speechSynthesis.cancel();
-    text = new SpeechSynthesisUtterance(content.innerText);
+    let text = new SpeechSynthesisUtterance(content.innerText);
     text.voice = voice;
     text.onerror = () => reader();
     text.onend = () => reader();
+    speechSynthesis.cancel();
     speechSynthesis.speak(text);
 }
 
