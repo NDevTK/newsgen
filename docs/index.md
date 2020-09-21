@@ -1,5 +1,6 @@
 <ul>
-  {% for post in site.fakenews %}
+  {% assign fakenews = site.fakenews | reverse %}
+  {% for post in fakenews %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
