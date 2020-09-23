@@ -21,14 +21,3 @@ jobs:
     - name: newsgen article
       run: |
         python newsgen.py -r satire.txt -d database.db -o markdown -O docs/_fakenews article
-    - name: Commit files
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git pull
-        git add .
-        git commit -m "Fake News [Auto]" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
