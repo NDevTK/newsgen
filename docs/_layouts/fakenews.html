@@ -1,18 +1,7 @@
 ---
 layout: default
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <script src="/main.js"></script>
-  </head>
-  <body>
-    <h1>{{ page.title }} <button onclick="THENEWS()" id="thenews" type="button">THE NEWS!</button></h1>
-    <img src="{{ page.featured_image }}" alt="Featured image">
-    <section id="content">
-      {{ content }}
-    </section>
-  </body>
-</html>
+<script src="/main.js"></script>
+<h1>{{ page.title }} <button onclick="THENEWS()" id="thenews" type="button">THE NEWS!</button></h1>
+<img src="{{ page.featured_image }}" alt="Featured image">
+<section id="content">{{ content }}</section>
