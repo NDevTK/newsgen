@@ -4,6 +4,7 @@ url: https://news.ndev.tk
 permalink: pretty
 plugins:
   - jekyll-feed
+  - amp-jekyll
 collections:
   fakenews:
     output: true
