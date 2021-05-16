@@ -2,9 +2,9 @@
 function getRandom(max) {
     return Math.floor((Math.random() * 10) % max)
 }
+window.speechSynthesis.getVoices();
 
 async function THENEWS() {
-    window.speechSynthesis.getVoices();
     if(window.hasOwnProperty("bg") && !bg.paused) {
     clearInterval(TTSKeepAlive);
     bg.pause();
