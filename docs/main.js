@@ -2,6 +2,7 @@
 function getRandom(max) {
     return Math.floor((Math.random() * 10) % max)
 }
+
 window.speechSynthesis.getVoices();
 
 async function THENEWS() {
