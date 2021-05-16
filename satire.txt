@@ -4,7 +4,7 @@ https://newsthump.com/feed/
 https://waterfordwhispersnews.com/feed/
 http://www.thecivilian.co.nz/feed/
 https://www.clickhole.com/rss
-http://nationalreport.net/feed/
+https://nationalreport.net/feed/
 https://newspunch.com/feed/
 https://now8news.com/feed/
 https://babylonbee.com/feed
@@ -13,9 +13,9 @@ https://www.theonion.com/rss
 https://worldnewsdailyreport.com/feed/
 https://worldtruth.tv/feed/
 https://www.thedailymash.co.uk/news/feed
-http://www.duffelblog.com/feed/
+https://www.duffelblog.com/feed
 https://gomerblog.com/feed/
-http://chaser.com.au/feed/
+https://chaser.com.au/feed/
 https://www.huzlers.com/feed/
 https://www.therisingwasabi.com/feed
 https://empirenews.net/feed/
@@ -28,8 +28,8 @@ https://thelapine.ca/feed/
 https://www.newsfoxsatire.com/feed/
 https://www.buzzfeed.com/world.xml
 https://www.theguardian.com/world/rss
-http://www.mirror.co.uk/news/world-news/rss.xml
-http://canadify.com/feed/
+https://www.mirror.co.uk/news/world-news/?service=rss
+https://canadify.com/feed/
 http://humorfeed.com/rss.php
 http://bigamericannews.com/feed/
 https://www.dailysquib.co.uk/feed
