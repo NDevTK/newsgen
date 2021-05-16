@@ -1,4 +1,4 @@
-name: training
+name: training [new]
 
 on:
   workflow_dispatch:
