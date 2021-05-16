@@ -34,5 +34,4 @@ http://humorfeed.com/rss.php
 http://bigamericannews.com/feed/
 https://www.dailysquib.co.uk/feed
 https://www.theshovel.com.au/feed/
-https://nationalreport.net/feed/
 https://dailybonnet.com/feed/
