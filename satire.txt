@@ -4,7 +4,6 @@ https://newsthump.com/feed/
 https://waterfordwhispersnews.com/feed/
 http://www.thecivilian.co.nz/feed/
 https://www.clickhole.com/rss
-https://nationalreport.net/feed/
 https://newspunch.com/feed/
 https://now8news.com/feed/
 https://babylonbee.com/feed
