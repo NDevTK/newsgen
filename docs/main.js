@@ -12,8 +12,8 @@ let bg;
 async function THENEWS() {
     if(bg && !bg.paused) {
     clearInterval(TTSKeepAlive);
-    clearInterval(SleepTimer);
     bg.pause();
+    clearInterval(SleepTimer);
     speechSynthesis.cancel();
     bg.currentTime = 0;
     thenews.innerText = "THE NEWS!";
