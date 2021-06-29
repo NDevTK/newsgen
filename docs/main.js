@@ -9,7 +9,6 @@ async function THENEWS() {
     if(window.hasOwnProperty("bg") && !bg.paused) {
     clearInterval(TTSKeepAlive);
     bg.pause();
-    delete TheNewsIntro;
     speechSynthesis.cancel();
     bg.currentTime = 0;
     thenews.innerText = "THE NEWS!";
@@ -19,7 +18,7 @@ async function THENEWS() {
     speechSynthesis.pause();
     speechSynthesis.resume();
     }, 5000);
-    if (!window.hasOwnProperty("bg")) bg = new Audio("https://news.ndev.tk/bg.mp3");
+    if (!window.hasOwnProperty("bg")) bg = new Audio("/bg.mp3");
     let voices = window.speechSynthesis.getVoices().filter(voice => {
 	return voice.lang.startsWith("en-");
     });
@@ -28,8 +27,7 @@ async function THENEWS() {
     bg.volume = 1;
     bg.play();
     thenews.innerText = "Stop Audio";
-    TheNewsIntro = sleep(6000);
-    await TheNewsIntro
+    await sleep(6000);    
     bg.volume = 0.3;
     reader(voice);
 }
