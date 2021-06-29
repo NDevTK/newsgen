@@ -9,7 +9,7 @@ let TTSKeepAlive;
 let bg;
 
 async function THENEWS() {
-    if(window.hasOwnProperty("bg") && !bg.paused) {
+    if(!bg.paused) {
     clearInterval(TTSKeepAlive);
     bg.pause();
     speechSynthesis.cancel();
