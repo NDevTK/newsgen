@@ -6,11 +6,13 @@ function getRandom(max) {
 window.speechSynthesis.getVoices();
 
 let TTSKeepAlive;
+let SleepTimer;
 let bg;
 
 async function THENEWS() {
     if(bg && !bg.paused) {
     clearInterval(TTSKeepAlive);
+    clearInterval(SleepTimer);
     bg.pause();
     speechSynthesis.cancel();
     bg.currentTime = 0;
@@ -36,7 +38,7 @@ async function THENEWS() {
 }
 
 async function reader(voice) {
-    if(bg.paused) return
+    if (bg.paused) return
     let text = new SpeechSynthesisUtterance(content.innerText);
     text.voice = voice;
     text.onerror = () => reader();
@@ -46,5 +48,7 @@ async function reader(voice) {
 }
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => {
+	  SleepTimer = setTimeout(resolve, ms);
+  });
 }
