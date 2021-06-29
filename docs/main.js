@@ -9,7 +9,7 @@ let TTSKeepAlive;
 let bg;
 
 async function THENEWS() {
-    if(!bg.paused) {
+    if(bg && !bg.paused) {
     clearInterval(TTSKeepAlive);
     bg.pause();
     speechSynthesis.cancel();
@@ -21,7 +21,7 @@ async function THENEWS() {
     speechSynthesis.pause();
     speechSynthesis.resume();
     }, 5000);
-    if (!window.hasOwnProperty("bg")) bg = new Audio("/bg.mp3");
+    if (!bg) bg = new Audio("/bg.mp3");
     let voices = window.speechSynthesis.getVoices().filter(voice => {
 	return voice.lang.startsWith("en-");
     });
