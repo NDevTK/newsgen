@@ -5,8 +5,10 @@ function getRandom(max) {
 
 window.speechSynthesis.getVoices();
 
+let TTSKeepAlive;
+let bg;
+
 async function THENEWS() {
-    let TTSKeepAlive;
     if(window.hasOwnProperty("bg") && !bg.paused) {
     clearInterval(TTSKeepAlive);
     bg.pause();
